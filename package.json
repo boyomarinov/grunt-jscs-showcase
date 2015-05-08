@@ -1,0 +1,7 @@
+{
+    "name": "grunt-jscs-showcase",
+    "devDependencies": {
+        "grunt": "*",
+        "grunt-jscs": "*"
+    }
+}
