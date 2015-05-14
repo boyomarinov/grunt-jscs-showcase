@@ -2,6 +2,8 @@
     "name": "grunt-jscs-showcase",
     "devDependencies": {
         "grunt": "*",
-        "grunt-jscs": "*"
+        "grunt-jscs": "*",
+        "load-grunt-configs": "^0.4.0",
+        "load-grunt-tasks": "0.6.0"
     }
 }

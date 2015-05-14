@@ -1,14 +1,13 @@
 module.exports = function (grunt) {
-    grunt.initConfig({
-        jscs: {
-            src: 'test-file.js',
-            options: {
-                config: '.jscsrc'
-            }
+    require('load-grunt-tasks')(grunt);
+    grunt.loadTasks('grunt/');
+
+    var taskConfig = require('load-grunt-configs')(grunt, {
+        config: {
+            src: 'grunt/*.js'
         }
     });
-
-    grunt.loadNpmTasks('grunt-jscs');
+    grunt.initConfig(grunt.util._.extend(taskConfig));
 
     grunt.registerTask('default', ['jscs']);
 };
